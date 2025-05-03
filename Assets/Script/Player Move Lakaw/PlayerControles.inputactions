@@ -1,0 +1,180 @@
+{
+    "name": "PlayerControles",
+    "maps": [
+        {
+            "name": "Land",
+            "id": "40829b48-dce2-456b-8b03-6da062edf247",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "f9048168-8c73-428a-9d09-a57682cfd58e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "f27fd232-b1d1-4d96-9b78-b9cb94ecefbe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TouchPress",
+                    "type": "PassThrough",
+                    "id": "ffc2b2db-c656-4397-8ceb-cf313971842e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=2),Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TouchPress1",
+                    "type": "Button",
+                    "id": "5ee0f92e-f4e3-4bc1-87be-607f3801a5f3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap,Press(behavior=2)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "f43d33ec-d873-4dd9-baa6-039881b910af",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f607c2ed-db84-4729-853e-5c40df880ab0",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "c5d8b9da-d6f7-4c84-8cfd-dca3aecb4a7a",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b086b916-bd28-413d-b0b9-2c9e283764f3",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "3d1cfaac-c79e-4851-a89e-c7496a31995b",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis AD",
+                    "id": "238540b2-b017-4586-b450-a3adc0c5be18",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "351e2766-def4-4576-bd05-040e2735b0f7",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "72f9e860-12b9-45d5-9140-3c1076b7a58c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "8c647b63-dbbe-495f-b9ce-a38363ced9c4",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0779f51-f205-4bd4-a1f6-134480b5b698",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9023d5a9-88d3-4891-83ed-d09e0d323bf8",
+                    "path": "<Touchscreen>/touch1/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPress1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "721fd44f-2941-46f7-8e8f-c1f18d38d378",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
